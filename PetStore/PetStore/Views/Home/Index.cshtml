@@ -1,86 +1,192 @@
 ﻿@{
     ViewBag.Title = "Home Page";
-}
 
+/* Didn't take the font awesome css from the file. Have taken it from this link. Sagar Needs to work on it.*/
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="content">
-    <!-- Start: SERVICE LIST -->
+    <!-- Page Content -->
     <div class="container">
-        <div class="page-header">
-            <h2>Our Services</h2>
-        </div>
-        <div class="row-fluid">
-            <ul class="thumbnails">
-                <li class="span3">
-                    <div class="thumbnail">
-                        <img src="~/Images/placeholder-260x150.jpg" alt="product name">
-                        <div class="caption">
-                            <h3>Dog Name</h3>
-                            <i class="icon-phone icon-large phone-number"></i> +919750227877
-
-                        </div>
-                        <div class="widget-footer">
-                            <p>
-                                <a href="#" class="btn btn-primary">Try for free</a>&nbsp;
-                                <a href="#" class="btn">Read more</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="span3">
-                    <div class="thumbnail">
-                        <img src="~/Images/placeholder-260x150.jpg" alt="product name">
-                        <div class="caption">
-                            <h3>Service title</h3>
-                            <p>
-                                Few attractive words about your service.Few attractive words about your service.
-                                Few attractive words about your service.Few attractive words about your service.
-                            </p>
-                        </div>
-                        <div class="widget-footer">
-                            <p>
-                                <a href="#" class="btn btn-primary">Try for free</a>&nbsp;
-                                <a href="#" class="btn">Read more</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="span3">
-                    <div class="thumbnail">
-                        <img src="~/Images/placeholder-260x150.jpg" alt="product name">
-                        <div class="caption">
-                            <h3>Service title</h3>
-                            <p>
-                                Few attractive words about your service.Few attractive words about your service.
-                                Few attractive words about your service.Few attractive words about your service.
-                            </p>
-                        </div>
-                        <div class="widget-footer">
-                            <p>
-                                <a href="#" class="btn btn-primary">Try for free</a>&nbsp;
-                                <a href="#" class="btn">Read more</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="span3">
-                    <div class="thumbnail">
-                        <img src="~/Images/placeholder-260x150.jpg" alt="product name">
-                        <div class="caption">
-                            <h3>Service title</h3>
-                            <p>
-                                Few attractive words about your service.Few attractive words about your service.
-                                Few attractive words about your service.Few attractive words about your service.
-                            </p>
-                        </div>
-                        <div class="widget-footer">
-                            <p>
-                                <a href="#" class="btn btn-primary">Try for free</a>&nbsp;
-                                <a href="#" class="btn">Read more</a>
-                            </p>
-                        </div>
-                    </div>
-                </li>
+        <div class="row">
+            <ul class="pull-right">
+                <a href="#"><i class="fa fa-3x fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-3x fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-3x fa-tumblr-square"></i></a>
+                <a href="#"><i class="fa fa-3x fa-instagram"></i></a>
             </ul>
-        </div>       
+            <aside class="col-md-3">
+                <p class="lead"><i class="fa fa-info-circle"></i> Category</p>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Fish <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a href="#">Cat <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a href="#">Dog <i class="fa fa-chevron-right"></i></a></li>
+                </ul>
+            </aside>
+            <div class="col-md-9">
+                <div class="row carousel-holder">
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image img-responsive" src="~/Images/animals.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image img-responsive" src="~/Images/animals.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image img-responsive" src="~/Images/animals.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Images/goldfish.jpg" class="img-rounded img-responsive" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Rs. 24.99</h4>
+                                <h4>
+                                    <a href="product.html">First Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<small><a href="#">readmore</a><span class="glyphicon glyphicon-chevron-right"></span> </small></p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Images/goldfish.jpg" class="img-thumbnail img-responsive" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Rs. 64.99</h4>
+                                <h4>
+                                    <a href="product.html">Second Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<small><a href="#">readmore</a><span class="glyphicon glyphicon-chevron-right"></span> </small></p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">12 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Images/goldfish.jpg" class="img-thumbnail img-responsive" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Rs. 74.99</h4>
+                                <h4>
+                                    <a href="product.html">Third Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<small><a href="#">readmore</a><span class="glyphicon glyphicon-chevron-right"></span> </small></p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Images/goldfish.jpg" class="img-thumbnail img-responsive" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Rs. 84.99</h4>
+                                <h4>
+                                    <a href="product.html">Fourth Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<small><a href="#">readmore</a><span class="glyphicon glyphicon-chevron-right"></span> </small></p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">6 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Images/goldfish.jpg" class="img-thumbnail img-responsive" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Rs. 94.99</h4>
+                                <h4>
+                                    <a href="product.html">Fifth Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<small><a href="#">readmore</a><span class="glyphicon glyphicon-chevron-right"></span> </small></p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Images/goldfish.jpg" class="img-thumbnail img-responsive" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Rs. 94.99</h4>
+                                <h4>
+                                    <a href="product.html">Fifth Product</a>
+                                </h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit....<small><a href="#">readmore</a><span class="glyphicon glyphicon-chevron-right"></span> </small></p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
