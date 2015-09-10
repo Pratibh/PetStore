@@ -26,5 +26,12 @@ namespace PetStore.Controllers
 
             return View();
         }
+
+        public ActionResult Product()
+        {
+            ViewBag.Message = "Product Page";
+
+            return View();
+        }
     }
 }
